@@ -1,0 +1,55 @@
+server:
+  port: 4444
+spring:
+  application:
+    name: employee-service  
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka 
+    enabled: true
+    fetch-registry: true
+      
+person:
+ name: Subhojit
+ 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+address: 
+ service:
+  uri: http://localhost:1111     
+
+#address-service:
+ #ribbon:
+  #listOfServers: http://localhost:1111, http://localhost:2222   
+  #eureka:
+   #enabled: false
+ 
+   
+assignment-service:
+ ribbon: 
+ # listOfServers: http://localhost:3100, http://localhost:3112    
+  eureka:
+   enabled: false
+ 
+
+hystrix:
+ command:
+  getDefaultAssignment:
+   execution:
+    isolation:
+     thread:
+      timeoutInMilliseconds=2000   
+  
+   
+ 
+
+     
+        
+         
+ 
