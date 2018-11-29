@@ -28,6 +28,5 @@ eureka:
 item-service:
   ribbon:
     eureka:
-      enabled: false
-    listOfServers: http://localhost:8081
+      enabled: true    
     ServerListRefreshInterval: 15000  
