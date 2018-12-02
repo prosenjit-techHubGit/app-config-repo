@@ -13,3 +13,12 @@ eureka:
   client:
     service-url:
       defaultZone: ${vcap.services.eureka.credentials.url}
+item-service:
+  ribbon:
+    eureka:
+      enabled: true    
+    ServerListRefreshInterval: 15000
+item:
+  exception:
+      message: One or more items in the order are invalid
+debug: false        
