@@ -33,4 +33,5 @@ item-service:
 item:
   exception:
       message: One or more items in the order are invalid
+debug: false      
 
