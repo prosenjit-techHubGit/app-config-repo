@@ -9,10 +9,10 @@ spring:
         dialect: org.hibernate.dialect.H2Dialect   
   h2:
     console:
-      enabled: false
+      enabled: true
 
 server:
-  port: 7072
+  port: 7073
   
 eureka:
   client:
