@@ -21,6 +21,6 @@ eureka:
     enabled: true
     fetch-registry: true 
     register-with-eureka: true
-customer:
+customer: 
  exception:
-  message: customer exception modified     
+    message: customer exception modified     
