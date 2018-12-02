@@ -12,7 +12,7 @@ spring:
        
   h2:
     console:
-      enabled: true
+      enabled: false
 
 server:
   port: 9091
@@ -32,10 +32,5 @@ item-service:
     ServerListRefreshInterval: 15000
 item:
   exception:
-    message: Some of the Items in order are invalid
-    
-management:
- endpoints:
-  web:
-   exposure:
-    include: *
+    message: Some of the Items in order are invalid 
+
