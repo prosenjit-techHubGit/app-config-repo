@@ -20,5 +20,5 @@ item-service:
     ServerListRefreshInterval: 15000
 item:
   exception:
-      message: One or more items in the order are invalid
+      message: One or more items in the order are not valid
         
