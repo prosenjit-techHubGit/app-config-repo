@@ -32,5 +32,5 @@ item-service:
     ServerListRefreshInterval: 15000
 item:
   exception:
-    message: Some of the Items in order are invalid 
+      message: Some of the Items in order are invalid 
 
