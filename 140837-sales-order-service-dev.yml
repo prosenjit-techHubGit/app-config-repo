@@ -33,3 +33,9 @@ item-service:
 item:
   exception:
     message: Some of the Items in order are invalid
+    
+management:
+ endpoints:
+  web:
+   exposure:
+    include: *
