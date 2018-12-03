@@ -12,6 +12,7 @@ eureka:
   instance:
     nonSecurePort: 80
     hostname: ${vcap.application.application_uris[0]}
+    
 item:
  create:
   exception:
