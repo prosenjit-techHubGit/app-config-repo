@@ -10,9 +10,7 @@ eureka:
   instance:
     nonSecurePort: 80
     hostname: ${vcap.application.application_name}
-  client:
-    service-url:
-      defaultZone: ${vcap.services.eureka.credentials.url}
+  
 item-service:
   ribbon:
     eureka:
