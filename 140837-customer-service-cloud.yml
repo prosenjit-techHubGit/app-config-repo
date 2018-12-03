@@ -1,1 +1,12 @@
-
+spring: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect        
+        
+eureka:
+  instance:
+    nonSecurePort: 80
+    hostname: ${vcap.application.application_name} 
