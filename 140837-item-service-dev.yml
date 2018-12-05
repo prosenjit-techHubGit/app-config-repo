@@ -14,8 +14,7 @@ spring:
     console:
       enabled: true
 
-server:
-  port: 0
+
  
 eureka:
   client:
